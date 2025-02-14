@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine card</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('https://slidescorner.com/wp-content/uploads/2023/01/01-Happy-Valentines-Day-In-Paper-Style-Design-free-PPT-Background-by-SlidesCorner.com_-1024x576.jpg.webp');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .card {
+      background-color: rgb(220, 113, 220);
+    }
+  </style>
+  <body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 25rem">
+      <img
+        src="https://thumbs.dreamstime.com/b/watercolor-valentines-cute-bear-349327840.jpg?w=768"
+        class="card-img-top"
+        alt="LOVE"
+      />
+      <div class="card-body">
+        <h5 class="card-title">VALENTINE DAY</h5>
+        <p class="card-text">
+          "You’re the one I’ve been waiting for. Will you say yes?"
+        </p>
+        <div class="d-flex justify-content-between">
+          <a href="http://127.0.0.1:5500/HTML/PROJECT%20NO.1/Second.html" class="btn btn-primary w-45">YES</a>
+          <button id="noButton" class="btn btn-primary w-45">NO</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const noButton = document.getElementById('noButton');
+      noButton.addEventListener('click', function() {
+        noButton.textContent = 'Click Left YES';
+      });
+    </script>
+  </body>
+</html>
